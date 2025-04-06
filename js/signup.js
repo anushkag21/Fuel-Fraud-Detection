@@ -73,3 +73,29 @@ function clearForm() {
 loginAnchor.addEventListener("click", function () {
   window.location.href = "index.html";
 });
+document.getElementById("signupBtn").addEventListener("click", async () => {
+  const name = document.getElementById("signupName").value;
+  const email = document.getElementById("signupEmail").value;
+  const password = document.getElementById("signupPassword").value;
+
+  if (!name || !email || !password) {
+    alert("Please fill in all fields!");
+    return;
+  }
+
+  try {
+    const res = await fetch("/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, password }),
+    });
+
+    const data = await res.json();
+    alert(data.message);
+  } catch (err) {
+    console.error("Signup error:", err);
+    alert("Signup failed.");
+  }
+});
