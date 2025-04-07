@@ -11,7 +11,7 @@ def fetch_reviews():
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Aastha1811",
+            password="password",
             database="fuel"
         )
         cursor = conn.cursor()
