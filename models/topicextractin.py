@@ -2,7 +2,7 @@ import mysql.connector
 from groq import Groq
 
 # Initialize the Groq client with your API key directly
-client = Groq(api_key="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")
+client = Groq(api_key="api key")
 
 # Function to fetch and combine reviews
 def fetch_reviews():
@@ -11,7 +11,7 @@ def fetch_reviews():
         conn = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Aastha1811",
+            password="password",
             database="fuel"
         )
         cursor = conn.cursor()
