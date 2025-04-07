@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 # Initialize Groq client
-client = Groq(api_key="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")
+client = Groq(api_key="api key")
 
 # Load sentiment model
 model = AutoModelForSequenceClassification.from_pretrained("citizenlab/twitter-xlm-roberta-base-sentiment-finetunned")
