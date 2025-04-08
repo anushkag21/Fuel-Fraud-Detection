@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Fraud Detection System</title>
+    
+    <style>
+        body {
+            background-color: #0a1f3d;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ffffff;
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+        #videoContainer {
+            margin: 30px auto;
+            background-color:rgb(255, 85, 0);
+            padding: 20px;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        video {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .infoBox {
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        #nozzle {
+            background-color: #000000; /* Yellow */
+        }
+        #paidFuel {
+            background-color: #4CAF50; /* Green */
+        }
+        #inCarFuel {
+            background-color: #F44336; /* Red */
+        }
+        .infoBox:hover {
+            opacity: 0.8;
+        }
+        @media screen and (max-width: 768px) {
+            #videoContainer {
+                width: 95%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Live Monitoring</h1>
+    <div id="videoContainer">
+        <p>Video shown by camera of fuel being dispensed into your car</p>
+        <video id="liveVideo" controls autoplay>
+            <source src="your-video-source-url" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="infoBox" id="nozzle">Nozzle is being detected</div>
+    <div class="infoBox" id="paidFuel">1L of fuel you paid for</div>
+    <div class="infoBox" id="inCarFuel">0.8L in your car</div>
+
+    <script>
+        // Logic to update the status (Optional)
+        function updateFuelData(nozzleDetected, fuelPaid, fuelInCar) {
+            document.getElementById('nozzle').innerText = nozzleDetected ? "Nozzle is being detected" : "Nozzle is NOT detected";
+            document.getElementById('paidFuel').innerText = fuelPaid + "L of fuel you paid for";
+            document.getElementById('inCarFuel').innerText = fuelInCar + "L in your car";
+        }
+
+        // Example usage
+        updateFuelData(true, 1, 0.8);
+    </script>
+
+</body>
+</html>
