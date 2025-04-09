@@ -39,40 +39,40 @@ Fuel Fraud Detection is an AI- and IoT-powered system designed to monitor fuel d
 
 ## 🏗️ Project Structure
 
-FUEL-DETECTION/
-│── css/                      # Stylesheets
-│── images/                   # Icons, camera frames, etc.
-│── js/                       # Frontend JavaScript
-│── models/                   # Python scripts for ML tasks
-│   ├── sample.py
-│   ├── sentimental.py
-│   ├── summary.py
-│   └── topicextractin.py
-│── myenv/                    # Python virtual environment
-│── node_modules/             # Node.js dependencies
-│── webfonts/                 # Web fonts
-├── app.py                    # Main Flask app
-├── server.js                 # MQTT server handler (Node.js)
-├── app.js                    # Client-side JavaScript
-├── fuel_map.html             # Fuel tracking page
-├── home.html                 # Landing page
-├── index.html                # Dashboard interface
-├── live.html                 # Live surveillance stream
-├── signup.html               # Registration page
-├── style.css                 # Custom CSS
-├── package.json              # Node project metadata
-├── package-lock.json         # Node dependency lock
-├── .gitignore                # Git ignore rules
+FUEL-DETECTION/  
+├── css/                      # Stylesheets  
+├── images/                   # Icons, camera frames, etc.  
+├── js/                       # Frontend JavaScript  
+├── models/                   # Python scripts for ML tasks  
+│   ├── sample.py  
+│   ├── sentimental.py  
+│   ├── summary.py  
+│   └── topicextractin.py  
+├── myenv/                    # Python virtual environment  
+├── node_modules/             # Node.js dependencies  
+├── webfonts/                 # Web fonts  
+├── app.py                    # Main Flask app  
+├── server.js                 # MQTT server handler (Node.js)  
+├── app.js                    # Client-side JavaScript  
+├── fuel_map.html             # Fuel tracking page  
+├── home.html                 # Landing page  
+├── index.html                # Dashboard interface  
+├── live.html                 # Live surveillance stream  
+├── signup.html               # Registration page  
+├── style.css                 # Custom CSS  
+├── package.json              # Node project metadata  
+├── package-lock.json         # Node dependency lock  
+└── .gitignore                # Git ignore rules
 
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Prerequisites
 
-- Python 3.10+
-- Node.js & npm
-- MySQL Server
-- Arduino IDE
-- ESP32 & necessary sensors
+- Python 3.10+  
+- Node.js & npm  
+- MySQL Server  
+- Arduino IDE  
+- ESP32 & necessary sensors  
 - MQTT broker (like Mosquitto)
 
 ### 2️⃣ Backend Setup
@@ -88,35 +88,29 @@ pip install -r requirements.txt
 
 # Start Flask server
 python app.py
-3️⃣ Node Server Setup
-bash
-Copy
-Edit
-# Install Node.js packages
-npm install
+```
 
-# Start MQTT server
-node server.js
-🔎 Usage
-📹 Monitor fuel gun usage via real-time video analysis.
+---
 
-🧠 Run sentiment and topic models on collected feedback.
+## 🔎 Usage
 
-📊 View data and alerts on the interactive dashboard.
+📹 Monitor fuel gun usage via real-time video analysis.  
+🧠 Run sentiment and topic models on collected feedback.  
+📊 View data and alerts on the interactive dashboard.  
+️ Connect and configure IoT devices via Wi-Fi.
 
-⚙️ Connect and configure IoT devices via Wi-Fi.
+---
 
-🔭 Future Scope
-Multilingual Feedback Analysis using Indian regional languages.
+## 🔭 Future Scope
 
-GPS Tracking Integration for delivery vehicle tracking.
+- **Multilingual Feedback Analysis** using Indian regional languages.  
+- **GPS Tracking Integration** for delivery vehicle tracking.  
+- **Edge Computing Support** for faster onsite processing.  
+- **Data Analytics Dashboard** for long-term fraud trends.  
+- **Automated Report Generation** and alerts to stakeholders.
 
-Edge Computing Support for faster onsite processing.
+---
 
-Data Analytics Dashboard for long-term fraud trends.
-
-Automated Report Generation and alerts to stakeholders.
-
-📜 License
-This project is licensed under the MIT License.
+## 📜 License
+This project is licensed under the MIT License.  
 Feel free to use, modify, and share it with proper attribution.
