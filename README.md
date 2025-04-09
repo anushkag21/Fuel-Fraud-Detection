@@ -44,7 +44,7 @@ FUEL-DETECTION/
 │── images/                   # Icons, camera frames, etc.  
 │── js/                       # Frontend JavaScript  
 │── models/                   # Python scripts for ML tasks  
-│   ├── sample.py  
+|   |
 │   ├── sentimental.py  
 │   ├── summary.py  
 │   └── topicextractin.py  
