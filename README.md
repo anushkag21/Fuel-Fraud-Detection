@@ -89,6 +89,13 @@ python app.py
 
 ---
 
+## 📸 Snapshots
+### Dashboard
+![DashBoard](https://github.com/user-attachments/assets/19c90858-68fd-4bfe-b676-01eabb86a70b)
+
+---
+
+
 ## 🔎 Usage
 
 📹 Monitor fuel gun usage via real-time video analysis.  
@@ -98,11 +105,6 @@ python app.py
 
 ---
 
-## 📸 Snapshots
-### Dashboard
-![DashBoard](https://github.com/user-attachments/assets/19c90858-68fd-4bfe-b676-01eabb86a70b)
-
----
 
 ## 🔭 Future Scope
 
