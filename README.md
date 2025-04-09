@@ -29,7 +29,7 @@ Fuel Fraud Detection is an AI- and IoT-powered system designed to monitor fuel d
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Flask (Python), Node.js  
+- **Backend:** Flask (Python)  
 - **AI/ML:** YOLOv6, RoBERTa, LDA, OpenCV  
 - **Database:** MySQL  
 - **IoT & Firmware:** ESP32, Flow Sensor, Load Cell, Ultrasonic Sensor, ESP32-CAM, Arduino C/C++  
@@ -40,19 +40,17 @@ Fuel Fraud Detection is an AI- and IoT-powered system designed to monitor fuel d
 ## 🏗️ Project Structure
 
 FUEL-DETECTION/  
-├── css/                      # Stylesheets  
-├── images/                   # Icons, camera frames, etc.  
-├── js/                       # Frontend JavaScript  
-├── models/                   # Python scripts for ML tasks  
+│── css/                      # Stylesheets  
+│── images/                   # Icons, camera frames, etc.  
+│── js/                       # Frontend JavaScript  
+│── models/                   # Python scripts for ML tasks  
 │   ├── sample.py  
 │   ├── sentimental.py  
 │   ├── summary.py  
 │   └── topicextractin.py  
-├── myenv/                    # Python virtual environment  
-├── node_modules/             # Node.js dependencies  
-├── webfonts/                 # Web fonts  
+│── myenv/                    # Python virtual environment  
+│── webfonts/                 # Web fonts  
 ├── app.py                    # Main Flask app  
-├── server.js                 # MQTT server handler (Node.js)  
 ├── app.js                    # Client-side JavaScript  
 ├── fuel_map.html             # Fuel tracking page  
 ├── home.html                 # Landing page  
@@ -60,16 +58,15 @@ FUEL-DETECTION/
 ├── live.html                 # Live surveillance stream  
 ├── signup.html               # Registration page  
 ├── style.css                 # Custom CSS  
-├── package.json              # Node project metadata  
-├── package-lock.json         # Node dependency lock  
-└── .gitignore                # Git ignore rules
+├── .gitignore                # Git ignore rules
+
+---
 
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Prerequisites
 
 - Python 3.10+  
-- Node.js & npm  
 - MySQL Server  
 - Arduino IDE  
 - ESP32 & necessary sensors  
@@ -97,20 +94,28 @@ python app.py
 📹 Monitor fuel gun usage via real-time video analysis.  
 🧠 Run sentiment and topic models on collected feedback.  
 📊 View data and alerts on the interactive dashboard.  
-️ Connect and configure IoT devices via Wi-Fi.
+⚙️ Connect and configure IoT devices via Wi-Fi.
+
+---
+
+## 📸 Snapshots
+
+
 
 ---
 
 ## 🔭 Future Scope
 
-- **Multilingual Feedback Analysis** using Indian regional languages.  
-- **GPS Tracking Integration** for delivery vehicle tracking.  
-- **Edge Computing Support** for faster onsite processing.  
-- **Data Analytics Dashboard** for long-term fraud trends.  
-- **Automated Report Generation** and alerts to stakeholders.
+- Multilingual Feedback Analysis using Indian regional languages.  
+- GPS Tracking Integration for delivery vehicle tracking.  
+- Edge Computing Support for faster onsite processing.  
+- Data Analytics Dashboard for long-term fraud trends.  
+- Automated Report Generation and alerts to stakeholders.
 
 ---
 
 ## 📜 License
+
 This project is licensed under the MIT License.  
 Feel free to use, modify, and share it with proper attribution.
+
